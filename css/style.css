@@ -212,7 +212,7 @@ p {
 
 /*About-info */
 #about-info {
-  padding-top: 70px;
+  padding: 70px 0;
 }
 #about-info .container {
   display: flex;
@@ -251,15 +251,18 @@ p {
 #testimonials .testimonial {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 20px;
   margin-bottom: 40px;
   border-radius: 5px;
   opacity: 0.9;
 }
 #testimonials .testimonial img {
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
   margin-right: 20px;
   border-radius: 50px;
+  object-fit: cover;
 }
 
 /*Contact Form*/

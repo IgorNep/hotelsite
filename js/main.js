@@ -2,7 +2,6 @@ const navbar = document.querySelector('#navbar');
 const menuBtn = document.querySelector('.navbar-menu-toggler');
 menuBtn.addEventListener('click', () => {
   navbar.classList.toggle('active');
-  console.log('toggled');
 });
 
 document.addEventListener('scroll', (e) => {
