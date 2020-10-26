@@ -1,0 +1,83 @@
+#navbar .container {
+  flex-direction: column;
+}
+
+#navbar .logo {
+  text-align: center;
+}
+
+#navbar ul {
+  display: none;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+#navbar.active ul {
+  display: block;
+}
+
+#navbar ul li a {
+  padding: 5px;
+  border-bottom: #444 dotted 1px;
+}
+.navbar-menu-toggler {
+  display: block;
+  position: fixed;
+  right: 24px;
+  top: 24px;
+}
+#navbar.active .navbar-menu-toggler:before {
+  transform: translateY(8px) rotate(45deg);
+}
+#navbar.active .navbar-menu-toggler:after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+/*Showcase */
+#showcase {
+  height: 100%;
+}
+#showcase .showcase-content {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+/*Home info */
+#home-info {
+  height: 550px;
+}
+#home-info .info-img {
+  display: none;
+}
+#home-info .info-content {
+  width: 100%;
+}
+
+/*Boxes*/
+.box {
+  flex-basis: 100%;
+}
+/*About info */
+#about-info .info-right,
+#about-info .info-left {
+  flex-basis: 100%;
+}
+.l-heading {
+  text-align: center;
+}
+#about-info .info-right {
+  margin-top: 30px;
+}
+
+/*Testimonial*/
+#testimonials .testimonial {
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Contact*/
+
+#contact-info .box {
+  border-bottom: #444 dotted 1px;
+}
+#contact-form textarea {
+  height: 80px;
+}
